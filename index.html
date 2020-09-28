@@ -11,25 +11,26 @@
 </head>
 
 <body>
-
     <section class="header">
         <h1 id="title">freeCodeCamp Survey Form</h1>
         <p id="description">Thank you for taking the time to help us improve the platform</p>
     </section>
 
+    <!-- Text/Number input fields -->
     <section class="form">
         <form id="survey-form">
-            <label class="input-label" id="name-label">Name</label>
+            <p class="input-label">Name</p>
             <input type="text" class="text-input-field" id="name" name="name" placeholder="Enter your name" required>
 
-            <label class="input-label" id="email-label">Email</label>
+            <p class="input-label">Email</p>
             <input type="email" class="text-input-field" id="email" name="email" placeholder="Enter your Email" required>
 
-            <label class="input-label" id="number-label">Age (optional)</label>
+            <p class="input-label">Age (optional)</p>
             <input type="number" id="number" class="text-input-field" name="age" min="0" max="100" placeholder="Age">
 
+            <!-- First dropdown field -->
             <p class="input-label">Which option best describes your current role?</p>
-            <select id="dropdown" class="select-option-input" name="role" id="role">
+            <select class="dropdown-input" name="role" id="current-role">
                 <option value="" disabled selected>Select current role</option>
                 <option value="student">Student</option>
                 <option value="fulltime-learner">Full Time Learner</option>
@@ -38,6 +39,7 @@
                 <option value="other">Other</option>
             </select>
 
+            <!-- Radio Button field -->
             <p class="input-label">Would you recommend freeCodeCamp to a friend?</p>
             <div class="wrapper">
                 <input type="radio" class="radio-button" value="definitely" name="recommend" id="definitely">
@@ -53,9 +55,9 @@
                 <label for="notsure">Not sure</label>
             </div>
 
-
+            <!-- Second dropdown field -->
             <p class="input-label">What is your favorite feature of freeCodeCamp?</p>
-            <select class="select-option-input" name="favorite-feature" id="favorite-feature">
+            <select class="dropdown-input" name="favorite-feature" id="favorite-feature">
                 <option value="" disabled selected>Select an option</option>
                 <option value="projects">Projects</option>
                 <option value="challenges">Challenges</option>
@@ -63,6 +65,7 @@
                 <option value="community">Community</option>
             </select>
 
+            <!-- Checkbox section of form -->
             <p class="input-label">What would you like to see improved? (Check all that apply)</p>
             <div class="wrapper">
                 <input type="checkbox" value="frontend-projects" name="improvements" id="fontend-projects">
@@ -110,7 +113,7 @@
                 <label for="additional-course">Additional Courses</label>
             </div>
 
-
+            <!-- Final comments textarea//Submit button -->
             <p class="input-label">Any comments or suggestions?</p>
             <textarea class="textarea" rows="5" cols="50" id="extra-comments-textbox"
                 placeholder="Enter your comments here..."></textarea>
